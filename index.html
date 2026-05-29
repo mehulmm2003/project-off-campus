@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenWheel Intelligence — Sustainable Vehicle Lifecycle & Compliance Platform</title>
+    <meta name="description" content="GreenWheel is a civic-tech environmental platform utilizing AI monitoring and data intelligence to improve vehicle lifecycle sustainability, compliance, and smart city recycling integrations.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-circle-nodes"></i>
+                </div>
+                <span>GreenWheel <span class="accent-text">Intelligence</span></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#scanner" class="nav-link">OCR Scanner</a>
+                <a href="#dashboards" class="nav-link">Smart City Dashboard</a>
+                <a href="#workflow" class="nav-link">Compliance Flow</a>
+                <a href="#calculator" class="nav-link">Recycling Hub</a>
+                <a href="#roadmap" class="nav-link">Roadmap & Business</a>
+            </nav>
+            <div class="nav-actions">
+                <span class="badge badge-pulse"><i class="fa-solid fa-satellite-dish"></i> Live Network</span>
+                <a href="#scanner" class="btn btn-primary btn-sm">Scan Plate</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="glow-orb glow-1"></div>
+            <div class="glow-orb glow-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="tagline"><i class="fa-solid fa-leaf"></i> CIVIC-TECH & SUSTAINABILITY</span>
+                    <h1 class="hero-title">Improving Environmental Compliance & Sustainable Vehicle Lifecycle Management</h1>
+                    <p class="hero-subtitle">An intelligent AI-powered vehicle scanning and compliance ecosystem. Helping smart cities, fleets, and environmental agencies transition from direct enforcement to automated awareness, education, and green recycling partnerships.</p>
+                    <div class="hero-cta-group">
+                        <a href="#scanner" class="btn btn-primary"><i class="fa-solid fa-qrcode"></i> Try License Scanner</a>
+                        <a href="#dashboards" class="btn btn-secondary"><i class="fa-solid fa-chart-line"></i> View Compliance Dashboard</a>
+                    </div>
+                    <div class="hero-trust-metrics">
+                        <div class="metric-item">
+                            <span class="metric-number" id="metric-vehicles">124.8K</span>
+                            <span class="metric-label">Vehicles Monitored</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number" id="metric-compliance">91.4%</span>
+                            <span class="metric-label">Overall Compliance</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number" id="metric-co2">2,480t</span>
+                            <span class="metric-label">CO₂ Displaced</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="glass-card hero-preview-card">
+                        <div class="card-header">
+                            <div class="card-dots"><span></span><span></span><span></span></div>
+                            <span class="live-indicator"><i class="fa-solid fa-circle"></i> NODE_028_ACTIVE</span>
+                        </div>
+                        <div class="hero-preview-body">
+                            <div class="hud-scanner">
+                                <div class="hud-scanning-line"></div>
+                                <div class="hud-car-wireframe">
+                                    <i class="fa-solid fa-car-side"></i>
+                                </div>
+                                <div class="hud-ocr-tag">DL 3C AY 1234</div>
+                            </div>
+                            <div class="hud-details">
+                                <div class="hud-row">
+                                    <span>REGISTRATION</span>
+                                    <span class="text-success"><i class="fa-solid fa-circle-check"></i> VALID</span>
+                                </div>
+                                <div class="hud-row">
+                                    <span>PUC CERTIFICATE</span>
+                                    <span class="text-success"><i class="fa-solid fa-circle-check"></i> VALID (120 Days)</span>
+                                </div>
+                                <div class="hud-row">
+                                    <span>ECO SCORE</span>
+                                    <span class="score-pill score-high">94 / 100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Strategic Pillar Section -->
+        <section class="pillars-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Our Legal & Ethical Core</h2>
+                    <p class="section-subheader">Moving away from aggressive punitive measures toward a sustainable civic framework. GreenWheel acts as an intelligent intermediary between vehicle owners, recycling networks, and local governments.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="glass-card pillar-card">
+                        <div class="pillar-icon text-success">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Detects</h3>
+                        <p>Leverages smart cameras, crowd-sourced reports, and municipal APIs to identify registration, PUC, and tax compliance states without invasive surveillance.</p>
+                    </div>
+                    <div class="glass-card pillar-card">
+                        <div class="pillar-icon text-info">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                        <h3>Reports</h3>
+                        <p>Notifies owners immediately through clean digital channels, offering alerts, reminder alerts, and grace periods rather than instant fines.</p>
+                    </div>
+                    <div class="glass-card pillar-card">
+                        <div class="pillar-icon text-warning">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h3>Recommends</h3>
+                        <p>Provides actionable resolution pathways, connecting users to renewal resources or facilitating environmentally friendly vehicle scrapping.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Interactive Plate Verification Hub (Image & Text Plate Search) -->
+        <section id="scanner" class="scanner-section">
+            <div class="glow-orb glow-3"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2>License Plate Verification Hub</h2>
+                    <p class="section-subheader">Test GreenWheel's advanced compliance intelligence. Enter a plate number or click one of our interactive mock plates to simulate real-time OCR database scanning.</p>
+                </div>
+
+                <div class="scanner-grid">
+                    <!-- Scanner Controller -->
+                    <div class="glass-card scanner-controls-card">
+                        <h3>Input Interface</h3>
+                        <p class="card-description">Choose how you want to query the vehicle database:</p>
+                        
+                        <!-- Tab Buttons -->
+                        <div class="tab-container">
+                            <button class="tab-btn active" id="tab-text-btn" onclick="switchScanTab('text')"><i class="fa-solid fa-keyboard"></i> Text Search</button>
+                            <button class="tab-btn" id="tab-image-btn" onclick="switchScanTab('image')"><i class="fa-solid fa-images"></i> Interactive Plates</button>
+                        </div>
+
+                        <!-- Tab Content: Text Search -->
+                        <div class="tab-content active" id="scan-tab-text">
+                            <div class="form-group">
+                                <label for="plate-input">Vehicle Plate Number</label>
+                                <div class="input-with-button">
+                                    <input type="text" id="plate-input" placeholder="e.g., MH-12-PQ-9999" value="MH-12-PQ-9999">
+                                    <button class="btn btn-primary" onclick="runTextSearch()"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                </div>
+                                <span class="input-hint">Format: AA-00-AA-0000 (Supports hyphens or spaces)</span>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content: Image Search (Preset Cards) -->
+                        <div class="tab-content" id="scan-tab-image">
+                            <p class="input-label">Select a simulated vehicle image plate:</p>
+                            <div class="preset-plates-grid">
+                                <div class="plate-card border-success" onclick="selectPresetPlate('DL3CAY1234')">
+                                    <div class="plate-card-thumb">
+                                        <i class="fa-solid fa-car-rear text-success"></i>
+                                        <span class="plate-pill bg-success-subtle text-success">EV Green</span>
+                                    </div>
+                                    <div class="plate-card-details">
+                                        <span class="plate-number font-plate">DL 3C AY 1234</span>
+                                        <span class="plate-desc">Model: Tesla Model 3 (Electric)</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="plate-card border-danger" onclick="selectPresetPlate('MH12PQ9999')">
+                                    <div class="plate-card-thumb">
+                                        <i class="fa-solid fa-car-rear text-danger"></i>
+                                        <span class="plate-pill bg-danger-subtle text-danger">High Alert</span>
+                                    </div>
+                                    <div class="plate-card-details">
+                                        <span class="plate-number font-plate">MH 12 PQ 9999</span>
+                                        <span class="plate-desc">Model: Honda Civic (Petrol, 16 yrs old)</span>
+                                    </div>
+                                </div>
+
+                                <div class="plate-card border-warning" onclick="selectPresetPlate('KA51MB4567')">
+                                    <div class="plate-card-thumb">
+                                        <i class="fa-solid fa-car-rear text-warning"></i>
+                                        <span class="plate-pill bg-warning-subtle text-warning">Warning Case</span>
+                                    </div>
+                                    <div class="plate-card-details">
+                                        <span class="plate-number font-plate">KA 51 MB 4567</span>
+                                        <span class="plate-desc">Model: Swift Dzire (Diesel, Expired PUC)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Custom File Upload Simulator -->
+                            <div class="file-upload-container mt-4">
+                                <label class="file-upload-label" for="custom-file-upload">
+                                    <i class="fa-solid fa-cloud-arrow-up text-info"></i>
+                                    <span>Simulate Image Upload</span>
+                                    <span class="file-upload-sub text-muted">Upload any vehicle photo to extract plate</span>
+                                </label>
+                                <input type="file" id="custom-file-upload" accept="image/*" onchange="handleFileUpload(event)">
+                            </div>
+                        </div>
+
+                        <!-- Live Action Box -->
+                        <div class="ocr-monitor-panel">
+                            <h4>Scanner Viewport</h4>
+                            <div class="ocr-camera-box">
+                                <div class="ocr-laser" id="scanner-laser"></div>
+                                <div class="ocr-focus-corners">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="ocr-display-content" id="scanner-display-content">
+                                    <i class="fa-solid fa-camera-retro large-icon text-muted"></i>
+                                    <p>Select a plate or search above to trigger OCR</p>
+                                </div>
+                            </div>
+                            <div class="ocr-status-bar">
+                                <span><i class="fa-solid fa-microchip"></i> System: <span id="ocr-engine-status" class="text-muted">Idle</span></span>
+                                <span><i class="fa-solid fa-bolt"></i> Latency: <span id="ocr-engine-latency">-- ms</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scanner Results Panel -->
+                    <div class="glass-card scanner-results-card">
+                        <div class="result-header">
+                            <h3>Compliance Ledger</h3>
+                            <span class="badge" id="vehicle-overall-badge">NO QUERY</span>
+                        </div>
+                        
+                        <div class="result-body" id="result-placeholder">
+                            <div class="placeholder-state">
+                                <i class="fa-solid fa-fingerprint large-icon pulse-soft text-info"></i>
+                                <h3>Awaiting OCR Matrix Search</h3>
+                                <p>GreenWheel parses the license plate, coordinates with mock RTO ledgers, verifies emission telemetry, and formats legal statuses here.</p>
+                            </div>
+                        </div>
+
+                        <div class="result-body hidden" id="result-content">
+                            <!-- Vehicle Bio -->
+                            <div class="vehicle-bio-strip">
+                                <div class="bio-icon" id="bio-vehicle-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                </div>
+                                <div class="bio-info">
+                                    <h4 id="res-plate-num" class="font-plate">MH-12-PQ-9999</h4>
+                                    <p id="res-vehicle-make">Honda Civic 1.8V (2010)</p>
+                                </div>
+                                <div class="bio-score">
+                                    <span class="score-value" id="res-eco-score">32</span>
+                                    <span class="score-label">Eco Score</span>
+                                </div>
+                            </div>
+
+                            <!-- Compliance Cards Grid -->
+                            <div class="compliance-status-grid">
+                                <!-- RC Status -->
+                                <div class="comp-card" id="card-rc">
+                                    <div class="comp-card-icon"><i class="fa-solid fa-id-card"></i></div>
+                                    <div class="comp-card-details">
+                                        <span class="comp-title">Registration Certificate</span>
+                                        <span class="comp-status" id="res-rc-status">Expired (16 Yrs)</span>
+                                    </div>
+                                    <span class="comp-indicator" id="ind-rc"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                </div>
+                                
+                                <!-- PUC Status -->
+                                <div class="comp-card" id="card-puc">
+                                    <div class="comp-card-icon"><i class="fa-solid fa-smog"></i></div>
+                                    <div class="comp-card-details">
+                                        <span class="comp-title">PUC Certificate (Pollution)</span>
+                                        <span class="comp-status" id="res-puc-status">Expired</span>
+                                    </div>
+                                    <span class="comp-indicator" id="ind-puc"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                </div>
+
+                                <!-- Insurance Status -->
+                                <div class="comp-card" id="card-ins">
+                                    <div class="comp-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div class="comp-card-details">
+                                        <span class="comp-title">Third-Party Insurance</span>
+                                        <span class="comp-status" id="res-ins-status">Expired</span>
+                                    </div>
+                                    <span class="comp-indicator" id="ind-ins"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                </div>
+
+                                <!-- Road Tax Status -->
+                                <div class="comp-card" id="card-tax">
+                                    <div class="comp-card-icon"><i class="fa-solid fa-coins"></i></div>
+                                    <div class="comp-card-details">
+                                        <span class="comp-title">Road Tax Clearance</span>
+                                        <span class="comp-status" id="res-tax-status">Due</span>
+                                    </div>
+                                    <span class="comp-indicator" id="ind-tax"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                </div>
+                            </div>
+
+                            <!-- Diagnostic Message -->
+                            <div class="diagnostic-box" id="res-diagnostic-box">
+                                <h5><i class="fa-solid fa-circle-info"></i> Diagnostic Action Recommendation</h5>
+                                <p id="res-diagnostic-text">This vehicle has exceeded the RTO 15-year limit for personal petrol vehicles. It is legally barred from public roads without certification. It also fails PUC norms, presenting immediate smog threats. Direct action: Scrapping highly recommended.</p>
+                            </div>
+
+                            <!-- Integration / Actions Grid -->
+                            <div class="ledger-actions-grid mt-4">
+                                <a href="#workflow" class="btn btn-secondary btn-sm text-center" onclick="highlightWorkflowStep(4)"><i class="fa-solid fa-sitemap"></i> View Escalation Status</a>
+                                <button class="btn btn-primary btn-sm" id="btn-action-trigger" onclick="triggerLedgerAction()"><i class="fa-solid fa-recycle"></i> Calculate Scrap Value</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Interactive Legal / Illegal Dashboards (RC, PUC, etc.) -->
+        <section id="dashboards" class="dashboard-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Smart City Environmental & Compliance Dashboard</h2>
+                    <p class="section-subheader">A high-fidelity monitoring interface built for municipalities, local police, RTO officials, and smart city nodes. View aggregates of legal vs. non-compliant vehicles monitored on active nodes.</p>
+                </div>
+
+                <!-- Dashboard Stats Grid -->
+                <div class="grid grid-4 stat-panel">
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon bg-success-subtle text-success">
+                            <i class="fa-solid fa-car-on"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <span class="stat-label">Total Vehicles Checked</span>
+                            <span class="stat-val" id="dash-stat-total">124,820</span>
+                            <span class="stat-change text-success"><i class="fa-solid fa-arrow-trend-up"></i> +12% this month</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon bg-info-subtle text-info">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <span class="stat-label">Fully Compliant (Legal)</span>
+                            <span class="stat-val" id="dash-stat-compliant">114,136</span>
+                            <span class="stat-change text-success"><i class="fa-solid fa-shield"></i> 91.44% Rate</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon bg-warning-subtle text-warning">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <span class="stat-label">Active Warnings / Grace</span>
+                            <span class="stat-val" id="dash-stat-warnings">8,410</span>
+                            <span class="stat-change text-warning"><i class="fa-solid fa-clock"></i> Notification pending</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon bg-danger-subtle text-danger">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <span class="stat-label">Critical Violation (Illegal)</span>
+                            <span class="stat-val" id="dash-stat-violations">2,274</span>
+                            <span class="stat-change text-danger"><i class="fa-solid fa-bullhorn"></i> Escalating to RTO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Charts System -->
+                <div class="dashboard-chart-grid mt-6">
+                    <!-- Chart 1: Registration Validity vs PUC Status (Legal vs Illegal Breakdown) -->
+                    <div class="glass-card chart-card">
+                        <div class="chart-header">
+                            <h3><i class="fa-solid fa-chart-pie text-success"></i> Legal vs Illegal Compliance Index</h3>
+                            <div class="chart-controls">
+                                <span class="badge bg-success-subtle text-success">Live telemetry</span>
+                            </div>
+                        </div>
+                        <p class="chart-description">Distribution of registration validity (RC) and environmental emissions (PUC) compliance across monitored civic grid nodes.</p>
+                        <div class="chart-box">
+                            <canvas id="complianceDoughnutChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Chart 2: Fleet Violations Breakdown -->
+                    <div class="glass-card chart-card">
+                        <div class="chart-header">
+                            <h3><i class="fa-solid fa-chart-bar text-info"></i> Specific Failure Distribution (Non-Compliant Vehicles)</h3>
+                            <div class="chart-controls">
+                                <span class="badge bg-slate-subtle text-muted">Weekly update</span>
+                            </div>
+                        </div>
+                        <p class="chart-description">Analyzing the primary causes of vehicle illegality: out-dated registration certificates, expired emission (PUC) slips, unpaid road tax, and lapses in insurance.</p>
+                        <div class="chart-box">
+                            <canvas id="complianceBarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Dashboard Interactivity Control -->
+                <div class="glass-card fleet-sim-card mt-6">
+                    <div class="sim-header">
+                        <div>
+                            <h4><i class="fa-solid fa-sliders text-warning"></i> Grid Scenario Simulator</h4>
+                            <p class="text-muted">Simulate the entry of an environmental policy change (e.g. banning diesel vehicles over 10 years instead of 15).</p>
+                        </div>
+                        <button class="btn btn-secondary btn-sm" onclick="triggerGridSimulation()"><i class="fa-solid fa-rotate"></i> Re-Calculate Fleet Impact</button>
+                    </div>
+                    <div class="sim-body">
+                        <div class="grid grid-3 mt-4 text-center">
+                            <div class="sim-metric">
+                                <span class="sim-metric-label">Estimated Compliant Fleet</span>
+                                <span class="sim-metric-val text-success" id="sim-fleet-compliant">114,136</span>
+                            </div>
+                            <div class="sim-metric">
+                                <span class="sim-metric-label">Immediate Flagged Vehicles</span>
+                                <span class="sim-metric-val text-warning" id="sim-fleet-flagged">8,410</span>
+                            </div>
+                            <div class="sim-metric">
+                                <span class="sim-metric-label">Mandatory Recycling Actions</span>
+                                <span class="sim-metric-val text-danger" id="sim-fleet-recycles">2,274</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Interactive Legal & Ethical Flowchart Visualizer -->
+        <section id="workflow" class="workflow-section">
+            <div class="glow-orb glow-4"></div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Our Smart Ethical Flow</h2>
+                    <p class="section-subheader">A structured, legally compliant civic-tech approach. GreenWheel does not seize, fine, or publicly shame. We warn, educate, offer support, and only notify local RTO/municipal authorities as a final resort.</p>
+                </div>
+
+                <!-- Flowchart UI -->
+                <div class="flowchart-container glass-card">
+                    <div class="flowchart-steps">
+                        <!-- Step 1 -->
+                        <div class="flow-step active" id="flow-step-1" onclick="selectFlowStep(1)">
+                            <div class="flow-badge">1</div>
+                            <div class="flow-icon"><i class="fa-solid fa-satellite"></i></div>
+                            <h4>Vehicle Detected</h4>
+                            <p>Captured via AI optical node or fleet log entry</p>
+                        </div>
+                        
+                        <div class="flow-connector"><i class="fa-solid fa-angle-right"></i></div>
+
+                        <!-- Step 2 -->
+                        <div class="flow-step" id="flow-step-2" onclick="selectFlowStep(2)">
+                            <div class="flow-badge">2</div>
+                            <div class="flow-icon"><i class="fa-solid fa-database"></i></div>
+                            <h4>Status Verified</h4>
+                            <p>RTO databases check for expired RC, PUC, or Insurance</p>
+                        </div>
+
+                        <div class="flow-connector"><i class="fa-solid fa-angle-right"></i></div>
+
+                        <!-- Step 3 -->
+                        <div class="flow-step" id="flow-step-3" onclick="selectFlowStep(3)">
+                            <div class="flow-badge">3</div>
+                            <div class="flow-icon"><i class="fa-solid fa-bell"></i></div>
+                            <h4>Owner Alerted</h4>
+                            <p>Direct alert sent with a standard compliance grace period</p>
+                        </div>
+
+                        <div class="flow-connector"><i class="fa-solid fa-angle-right"></i></div>
+
+                        <!-- Step 4 -->
+                        <div class="flow-step" id="flow-step-4" onclick="selectFlowStep(4)">
+                            <div class="flow-badge">4</div>
+                            <div class="flow-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <h4>Eco-Assistance</h4>
+                            <p>Suggests renewal facilities or estimates vehicle scrap value</p>
+                        </div>
+
+                        <div class="flow-connector"><i class="fa-solid fa-angle-right"></i></div>
+
+                        <!-- Step 5 -->
+                        <div class="flow-step" id="flow-step-5" onclick="selectFlowStep(5)">
+                            <div class="flow-badge">5</div>
+                            <div class="flow-icon"><i class="fa-solid fa-building-shield"></i></div>
+                            <h4>RTO Escalate</h4>
+                            <p>Submits report to authorities if status remains unresolved</p>
+                        </div>
+                    </div>
+
+                    <!-- Flow Dynamic Description Box -->
+                    <div class="flow-details-box mt-4" id="flow-details-container">
+                        <div class="flow-detail-pane" id="flow-pane-1">
+                            <h4 class="text-success"><i class="fa-solid fa-satellite"></i> Stage 1: Optical Detection Node</h4>
+                            <p>Vehicles passing intelligent camera clusters (smart highway nodes, corporate parking, residential societies) have their plate text read securely. All initial scanning runs locally on the edge, without recording driver biometric data or private personal details, keeping compliance audits safe and ethical.</p>
+                        </div>
+                        <div class="flow-detail-pane hidden" id="flow-pane-2">
+                            <h4 class="text-info"><i class="fa-solid fa-database"></i> Stage 2: RTO & Environmental Ledger Lookups</h4>
+                            <p>Once a license plate is recognized, the system securely checks decentralized state RTO registries and environmental databases. It validates if the vehicle possesses an active Registration Certificate (RC), a clean emissions (PUC) certificate, third-party liability insurance, and paid road taxes.</p>
+                        </div>
+                        <div class="flow-detail-pane hidden" id="flow-pane-3">
+                            <h4 class="text-warning"><i class="fa-solid fa-bell"></i> Stage 3: Instant Soft Warnings & Grace Timers</h4>
+                            <p>Instead of issuing a direct government ticket or fine, the GreenWheel ecosystem contacts the vehicle owner. A grace period is initiated. The notification clearly communicates the issue (e.g. "Your PUC has expired. Please update it within 14 days to prevent escalations").</p>
+                        </div>
+                        <div class="flow-detail-pane hidden" id="flow-pane-4">
+                            <h4 class="text-success"><i class="fa-solid fa-seedling"></i> Stage 4: Lifecycle & Ecological Assistance</h4>
+                            <p>The system provides supportive pathways to achieve compliance. It shares local certified PUC renewal centers. If the vehicle is past its legal operational lifespan (e.g., petrol vehicle older than 15 years), it estimates the scrap metal and component recycling payout, allowing the owner to schedule a pickup directly through authorized partners.</p>
+                        </div>
+                        <div class="flow-detail-pane hidden" id="flow-pane-5">
+                            <h4 class="text-danger"><i class="fa-solid fa-building-shield"></i> Stage 5: Municipal & RTO Notification</h4>
+                            <p>If the vehicle owner ignores repeated soft warning signals and remains non-compliant after the grace period expires, the record is flagged. The system securely sends a compliance status report to integrated law enforcement, police databases, or transport departments. The authority legally enforces the action, maintaining a professional and risk-free platform structure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Interactive Scrap & Environmental Savings Calculator -->
+        <section id="calculator" class="calculator-section">
+            <div class="container">
+                <div class="calculator-layout glass-card">
+                    <div class="calculator-inputs-panel">
+                        <h2>Vehicle Recycle & Scrap Estimator</h2>
+                        <p class="card-description">If a vehicle has reached its legal expiry or suffers major emission failures, recycling is the greenest path. Input vehicle specs to calculate scrap payout and environmental offsets.</p>
+                        
+                        <form id="scrap-calculator-form" onsubmit="event.preventDefault(); calculateScrap();">
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label for="calc-vehicle-type">Vehicle Category</label>
+                                    <select id="calc-vehicle-type" onchange="calculateScrap()">
+                                        <option value="hatchback">Hatchback (Small Car)</option>
+                                        <option value="sedan" selected>Sedan / Saloon</option>
+                                        <option value="suv">SUV / MUV (Large)</option>
+                                        <option value="twowheeler">Two-Wheeler (Scooter/Motorcycle)</option>
+                                        <option value="commercial">Light Commercial Vehicle (LCV)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="calc-mfg-year">Manufacturing Year</label>
+                                    <select id="calc-mfg-year" onchange="calculateScrap()">
+                                        <option value="2005">2005 or older</option>
+                                        <option value="2010" selected>2006 - 2010</option>
+                                        <option value="2015">2011 - 2015</option>
+                                        <option value="2020">2016 or newer</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-2 mt-3">
+                                <div class="form-group">
+                                    <label for="calc-fuel-type">Fuel Core</label>
+                                    <select id="calc-fuel-type" onchange="calculateScrap()">
+                                        <option value="petrol" selected>Petrol / Gasoline</option>
+                                        <option value="diesel">Diesel Core</option>
+                                        <option value="cng">CNG / LPG</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="calc-condition">Structural Condition</label>
+                                    <select id="calc-condition" onchange="calculateScrap()">
+                                        <option value="scrap" selected>Complete Scrap (Damaged/Non-Running)</option>
+                                        <option value="fair">Fair State (Running but aged)</option>
+                                        <option value="excellent">Good Component Yield (All parts intact)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="calc-location">Pickup Location (RTO Jurisdiction)</label>
+                                <input type="text" id="calc-location" value="National Capital Region (NCR)" placeholder="e.g. Mumbai, Delhi, Bangalore">
+                            </div>
+                        </form>
+
+                        <!-- Interactive Scrap Booking Modal-inside-card -->
+                        <div class="booking-integration mt-4" id="booking-container">
+                            <h5><i class="fa-solid fa-truck-ramp-box text-success"></i> Partner Scrap Pickup Portal</h5>
+                            <p class="text-muted small">Schedule an inspection with our government-authorized scrapping centers. We handle deregistration papers.</p>
+                            
+                            <div class="grid grid-2 mt-2">
+                                <input type="text" id="book-owner-name" placeholder="Owner Full Name">
+                                <input type="tel" id="book-owner-phone" placeholder="Phone (e.g. +91 98765 43210)">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-sm btn-block mt-3" onclick="submitScrapBooking()"><i class="fa-solid fa-circle-check"></i> Book Scrap Assessment</button>
+                        </div>
+                    </div>
+
+                    <!-- Calculator Outputs Panel -->
+                    <div class="calculator-outputs-panel">
+                        <h3>Estimated Ecological & Fiscal Yield</h3>
+                        
+                        <div class="scrap-payout-box">
+                            <span class="payout-label">Scrap Valuation (Est.)</span>
+                            <span class="payout-value" id="calc-res-value">$1,250</span>
+                            <span class="payout-sub text-success"><i class="fa-solid fa-piggy-bank"></i> Includes steel weight & functional component bonus</span>
+                        </div>
+
+                        <div class="ecological-gains-grid mt-4">
+                            <div class="eco-gain-card">
+                                <div class="eco-gain-icon text-success"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                                <div class="eco-gain-details">
+                                    <span class="eco-gain-title">CO₂ Displaced (Lifespan)</span>
+                                    <span class="eco-gain-val" id="calc-res-co2">4.2 Metric Tons</span>
+                                </div>
+                            </div>
+
+                            <div class="eco-gain-card">
+                                <div class="eco-gain-icon text-info"><i class="fa-solid fa-cubes"></i></div>
+                                <div class="eco-gain-details">
+                                    <span class="eco-gain-title">Steel Recovered & Recycled</span>
+                                    <span class="eco-gain-val" id="calc-res-steel">850 kg</span>
+                                </div>
+                            </div>
+
+                            <div class="eco-gain-card">
+                                <div class="eco-gain-icon text-warning"><i class="fa-solid fa-recycle"></i></div>
+                                <div class="eco-gain-details">
+                                    <span class="eco-gain-title">Scrap Recycle Payout Fee</span>
+                                    <span class="eco-gain-val" id="calc-res-commission">8.5% Commission (Est.)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scrapping-infotip mt-4">
+                            <p class="small text-muted"><i class="fa-solid fa-certificate"></i> Values calculated according to standard vehicle weights, scrap steel indices, and average tailpipe CO₂ offset formulas. Scrapping process issues a Certificate of Deposit (CoD), qualifying the owner for road tax rebates and new car discounts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Interactive Pitch Deck, Roadmap, Business Revenue Matrix -->
+        <section id="roadmap" class="roadmap-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Startup Scalability & Expansion Model</h2>
+                    <p class="section-subheader">Explore GreenWheel's robust commercial avenues, government smart-city integration systems, and our technical development map designed to maximize investor value.</p>
+                </div>
+
+                <!-- Dynamic Strategy Tab Switcher -->
+                <div class="strategy-tabs-container">
+                    <div class="strategy-tabs">
+                        <button class="strategy-tab-btn active" onclick="switchStrategyTab('roadmap-pane')"><i class="fa-solid fa-map-location-dot"></i> Development Roadmap</button>
+                        <button class="strategy-tab-btn" onclick="switchStrategyTab('revenue-pane')"><i class="fa-solid fa-hand-holding-dollar"></i> Business Revenue Opportunities</button>
+                        <button class="strategy-tab-btn" onclick="switchStrategyTab('positioning-pane')"><i class="fa-solid fa-circle-check"></i> High-Grade Value Matrix</button>
+                    </div>
+
+                    <!-- Strategy Card Area -->
+                    <div class="glass-card strategy-content-card mt-4">
+                        
+                        <!-- TAB 1: ROADMAP PANELS -->
+                        <div class="strategy-pane active" id="strategy-roadmap-pane">
+                            <div class="roadmap-phases-grid">
+                                <!-- Phase 1 -->
+                                <div class="phase-card">
+                                    <div class="phase-header">
+                                        <span class="phase-number">Phase 1</span>
+                                        <span class="phase-badge bg-success-subtle text-success">Current Focus</span>
+                                    </div>
+                                    <h4>Awareness & Monitoring Hub</h4>
+                                    <ul class="phase-list">
+                                        <li><i class="fa-solid fa-chevron-right"></i> Automated registration certificate (RC) and tax database tracking.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Soft SMS, Email, and Push notifications for pending expiry dates.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Individual owner Environmental Score algorithms.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Premium personal vehicle tracking dashboards.</li>
+                                    </ul>
+                                    <div class="phase-footer">
+                                        <span class="footer-label">Primary Revenue</span>
+                                        <span class="footer-val">SaaS Fleet Subscriptions & Analytics</span>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 2 -->
+                                <div class="phase-card">
+                                    <div class="phase-header">
+                                        <span class="phase-number">Phase 2</span>
+                                        <span class="phase-badge bg-info-subtle text-info">Q3-Q4 2026</span>
+                                    </div>
+                                    <h4>Automotive Recycling Ecosystem</h4>
+                                    <ul class="phase-list">
+                                        <li><i class="fa-solid fa-chevron-right"></i> Digital API links with authorized RTO scrapping facilities.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> In-app vehicle inspection booking and legal certificate handling.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Auto-dealer lead exchanges for vehicle upgrade programs.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Automated towing and logistics dispatch network.</li>
+                                    </ul>
+                                    <div class="phase-footer">
+                                        <span class="footer-label">Primary Revenue</span>
+                                        <span class="footer-val">Recycling Transaction Commissions</span>
+                                    </div>
+                                </div>
+
+                                <!-- Phase 3 -->
+                                <div class="phase-card">
+                                    <div class="phase-header">
+                                        <span class="phase-number">Phase 3</span>
+                                        <span class="phase-badge bg-warning-subtle text-warning">Year 2027</span>
+                                    </div>
+                                    <h4>Government & Smart City Nodes</h4>
+                                    <ul class="phase-list">
+                                        <li><i class="fa-solid fa-chevron-right"></i> Multi-node integration with municipal ANPR camera systems.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Predictive pollution mapping and heavy-emitter cluster alerts.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Automatic escalation of critical RTO violators.</li>
+                                        <li><i class="fa-solid fa-chevron-right"></i> Corporate ESG compliance reports and municipal certifications.</li>
+                                    </ul>
+                                    <div class="phase-footer">
+                                        <span class="footer-label">Primary Revenue</span>
+                                        <span class="footer-val">Smart City Licensing & Compliance SaaS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2: REVENUE OPPORTUNITIES -->
+                        <div class="strategy-pane hidden" id="strategy-revenue-pane">
+                            <div class="grid grid-2 revenue-grid">
+                                <div class="revenue-item-card">
+                                    <div class="rev-header">
+                                        <div class="rev-icon"><i class="fa-solid fa-recycle"></i></div>
+                                        <h4>1. Recycling Commissions</h4>
+                                    </div>
+                                    <p>Earn a standard 5% to 10% brokerage commission from partnered automobile scrap yards on metal recovery values and component yields, scaling exponentially with municipal fleet replacements.</p>
+                                </div>
+
+                                <div class="revenue-item-card">
+                                    <div class="rev-header">
+                                        <div class="rev-icon"><i class="fa-solid fa-building-user"></i></div>
+                                        <h4>2. Fleet & Corporate Subscriptions</h4>
+                                    </div>
+                                    <p>Enterprise SaaS dashboards for corporate campus parks, transport companies, and food delivery networks to maintain active ecological compliance records, preventing RTO disruption risks.</p>
+                                </div>
+
+                                <div class="revenue-item-card">
+                                    <div class="rev-header">
+                                        <div class="rev-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                        <h4>3. Insurance Reminders & Integrations</h4>
+                                    </div>
+                                    <p>Partnerships with automotive insurers to integrate verification tracking directly into the portal, earning referral payouts on policies booked through expired alerts.</p>
+                                </div>
+
+                                <div class="revenue-item-card">
+                                    <div class="rev-header">
+                                        <div class="rev-icon"><i class="fa-solid fa-camera"></i></div>
+                                        <h4>4. Municipal Smart City SaaS Contracts</h4>
+                                    </div>
+                                    <p>Providing aggregated, anonymous, GDPR-compliant vehicle pollution telemetry and registration trends directly to municipal dashboards on yearly licensing models.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: STRATEGIC VALUE POSITIONING -->
+                        <div class="strategy-pane hidden" id="strategy-positioning-pane">
+                            <div class="positioning-box">
+                                <h3>High-Grade Civic Value Matrix</h3>
+                                <p class="text-muted">A startup-grade model bridging technological innovation with ethical sustainability metrics.</p>
+                                
+                                <div class="table-container mt-3">
+                                    <table class="matrix-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Domain</th>
+                                                <th>Strategic Value Provision</th>
+                                                <th>Operational Metric</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Environment</strong></td>
+                                                <td>Direct reduction of high-emission vehicles through proactive scrappage and replacement encouragement.</td>
+                                                <td class="text-success"><i class="fa-solid fa-leaf"></i> Metric Tons of CO₂ saved</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Civic-Tech</strong></td>
+                                                <td>Frictionless database synchronization for active legal vehicle registries, reducing database stagnation.</td>
+                                                <td class="text-info"><i class="fa-solid fa-database"></i> Active compliance rates</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Artificial Intelligence</strong></td>
+                                                <td>State-of-the-art plate and vehicle model recognition via edge ANPR algorithms and multi-factor RTO checks.</td>
+                                                <td class="text-warning"><i class="fa-solid fa-bolt"></i> Millisecond OCR latency</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Circular Economy</strong></td>
+                                                <td>Transforming end-of-life steel, aluminum, and rare batteries into reusable raw industrial assets.</td>
+                                                <td class="text-success"><i class="fa-solid fa-recycle"></i> Tons of raw steel recovered</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                    <span>GreenWheel <span class="accent-text">Intelligence</span></span>
+                </a>
+                <p class="mt-3 text-muted">Empowering environmental awareness, vehicle lifecycle sustainability, and next-generation smart-city infrastructure integrations through ethical AI.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Capabilities</h4>
+                <ul>
+                    <li><a href="#scanner">Plate OCR Verification</a></li>
+                    <li><a href="#dashboards">Smart City Monitoring</a></li>
+                    <li><a href="#calculator">Scrap Value Calculator</a></li>
+                    <li><a href="#workflow">Ethical Enforcement Flow</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal & Ethical</h4>
+                <ul>
+                    <li><a href="#workflow">Regulatory Guidelines</a></li>
+                    <li><a href="#workflow">RTO Authorized Interfaces</a></li>
+                    <li><a href="#">Privacy policy (GDPR Core)</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter Subscription</h4>
+                <p class="text-muted small">Stay up to date with smart-city environmental and vehicle recycling regulations.</p>
+                <div class="input-with-button mt-3">
+                    <input type="email" placeholder="gov-body@smartcity.org" id="newsletter-email">
+                    <button class="btn btn-primary btn-sm" onclick="alert('Thank you for subscribing! GreenWheel newsletters will arrive monthly.')">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 GreenWheel Intelligence Inc. All Rights Reserved. Fully authorized municipal compliance assistance middleware.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
